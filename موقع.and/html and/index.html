@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHB9 *H'5D 'D7D'(</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="auth">
+        <h2>#/.D 1E2 'D*-BB</h2>
+        <input type="password" id="authCode" placeholder="#/.D 'D1E2">
+        <button onclick="checkAuth()">*-BB</button>
+    </div>
+    <div id="nameInput" style="display:none;">
+        <h2>#/.D '3EC</h2>
+        <input type="text" id="userName" placeholder="#/.D '3EC">
+        <button onclick="submitName()">%13'D</button>
+    </div>
+    <div id="mainContent" style="display:none;">
+        <header>
+            <h1>EHB9 *H'5D 'D7D'(</h1>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> 'D1&J3J)</a></li>
+                    <li><a href="#"><i class="fas fa-comments"></i> 'DE-'/+'*</a></li>
+                    <li><a href="#"><i class="fas fa-file-upload"></i> 1A9 'DEDA'*</a></li>
+                    <li><a href="#"><i class="fas fa-poll"></i> '3*7D'9 'D1#J</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="chat">
+            <div id="messages"></div>
+            <input type="text" id="messageInput" placeholder="'C*( 13'D*C GF'...">
+            <input type="file" id="fileInput" style="display:none;">
+            <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i> %13'D</button>
+            <button onclick="document.getElementById('fileInput').click()"><i class="fas fa-file-upload"></i> 1A9 EDA</button>
+        </section>
+        <section id="features">
+            <button onclick="toggleInbox()"><i class="fas fa-inbox"></i> 916 'D13'&D 'DH'1/)</button>
+            <div id="inbox" style="display:none;">
+                <h3>'D13'&D 'DH'1/)</h3>
+                <div id="inboxMessages"></div>
+            </div>
+        </section>
+        <section id="poll">
+            <h3>'3*7D'9 'D1#J</h3>
+            <input type="text" id="pollQuestion" placeholder="#/.D 'D3$'D">
+            <input type="text" id="pollOption1" placeholder="'D.J'1 'D#HD">
+            <input type="text" id="pollOption2" placeholder="'D.J'1 'D+'FJ">
+            <button onclick="createPoll()">%F4'! '3*7D'9</button>
+            <div id="pollResults" style="display:none;">
+                <h4 id="pollQuestionDisplay"></h4>
+                <button onclick="vote('option1')">'D.J'1 'D#HD</button>
+                <button onclick="vote('option2')">'D.J'1 'D+'FJ</button>
+                <div id="pollVotes"></div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+)</html>
